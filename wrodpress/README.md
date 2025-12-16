@@ -6,7 +6,7 @@ This project sets up a WordPress site with MariaDB database using Docker Compose
 
 ## Prerequisites
 
-- Docker
+- Docker Desktop installed
 - Docker Compose
 
 ## Configuration
@@ -159,3 +159,7 @@ docker compose cp wordpress:/tmp/wp-backup.tar.gz ./wp-backup.tar.gz
 - If you encounter port conflicts, modify the port mapping in `docker-compose.yml` (e.g., change `80:80` to `8080:80`)
 - Check container status: `docker compose ps`
 - View container logs: `docker compose logs wordpress` or `docker compose logs db`
+
+
+## Refer to the official documentation for more details:
+[WordPress Compose](https://github.com/docker/awesome-compose/tree/master/official-documentation-samples/wordpress/)
