@@ -7,7 +7,6 @@ services:
     command: '--default-authentication-plugin=mysql_native_password'
     volumes:
       - db_data:/var/lib/mysql
-      - ./mu-plugins/ab-header.php:/var/www/html/wp-content/mu-plugins/ab-header.php:ro
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=somewordpress
@@ -21,6 +20,7 @@ services:
     image: wordpress:latest
     volumes:
       - wp_data:/var/www/html
+      - ./mu-plugins/ab-header.php:/var/www/html/wp-content/mu-plugins/ab-header.php:ro
     ports:
       - 80:80
     restart: always
