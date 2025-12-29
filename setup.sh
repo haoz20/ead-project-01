@@ -26,4 +26,3 @@ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
 # exit to apply docker changes
 exit
-
